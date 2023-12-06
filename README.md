@@ -3,7 +3,8 @@
 **Question 4:**
 
 a. The two graphs which are produced from the random walks show continuous movement across the x and y axes, over time. The two graphs are noticably different in both pathway and scale.
-b.
+
+b. A random seed specifically defines a sequence of randomly generated numbers so that it is reproducible. In other words, the 'random seed' which is assigned to this sequence can be used by any other user to output the same pattern of numbers regardless of working environment. Thus, truly random data can still be generated, but multiple different researchers can do analysis independently of each other on the same random data set.
 ## Instructions
 
 The homework for this Computer skills practical is divided into 5 questions for a total of 100 points (plus an optional bonus question worth 10 extra points). First, fork this repo and make sure your fork is made **Public** for marking. Answers should be added to the # INSERT ANSWERS HERE # section above in the **README.md** file of your forked repository.
