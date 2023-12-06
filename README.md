@@ -10,6 +10,56 @@ Random seed code change image:
 
 ![image](https://github.com/shad210/reproducible-research_homework/assets/150149671/49bc9ea6-d92c-410a-81ce-d2ed5b204a3b)
 
+------------------------------------------
+
+**Question 5**
+
+a. Using the nrow and ncol functions in R, the dataframe has 33 rows, and 13 columns.
+
+b. When visualisating the data in ggplot, it is clear that both the genome size and the virion volume need to be logarithmically transformed, so a log transformation is what is needed to fit the data for linear modelling.
+
+c. By creating a linear model for the log transformed data, and then viewing a summary of the model, we generate the table below:
+
+![image](https://github.com/shad210/reproducible-research_homework/assets/150149671/4a5b88ad-dd46-4699-ae5a-43637714f165)
+
+The log of the scaling factor is the estimate for the intercept of 7.0748. To find the actual scaling factor, we need to exponentiate the value by using e^(7.0748) which gives us a value of 1181.8.
+The exponent factor is simply the log_genome_length estimate value of 1.5152 - here there is no need to exponentiate since this factor is already an exponent. The p-value for α is 2.28e-10, and the p-value for β is 6.44e-10, meaning they are both statistically significant.
+
+So, α = 1.5152, and β = 1181.8
+
+The exponent factor α is very similar to the factor found in the paper (1.5152 in our model vs. 1.52 in the paper) and lies within the 95% CI for the factor, and the scaling factor is also very similar to the factor found in the paper (1181.8 in our model vs. 1182 in the paper).
+
+d. The code to reproduce the figure is as follows:
+
+```{r}
+#Read the csv from the paper, and define as a dataframe
+Cui_data <- read.csv("Cui_etal2014.csv")
+
+#We need to log transform both the genome length and the virion volume
+log_genome_length <- log(Cui_data$Genome.length..kb.)
+log_virion_volume <- log(Cui_data$Virion.volume..nm.nm.nm.)
+
+#Create our plot with the linear model added using geom_smooth
+ggplot(aes(x = log_genome_length,y = log_virion_volume), data = Cui_data) +
+  geom_point() +
+  geom_smooth(method = "lm", formula = y ~ x, se = TRUE, color = "blue") +
+  xlab("log[Genome length (kb)]") +
+  ylab("log[Virion volume (nm^3)]") +
+  theme_bw()
+
+```
+Which then outputs the following figure:
+
+![image](https://github.com/shad210/reproducible-research_homework/assets/150149671/62961d52-c864-4331-ab0a-6c6a9aa89a18)
+
+e. To estimate the volume of a 300 kb dsDNA virus, we must use our allometric model V(L) = β(L^α). Thus V(300) = 1181.8(300^1.5152) = 6697000 nm^3
+
+---------------------
+
+Bonus:
+
+
+
 ## Instructions
 
 The homework for this Computer skills practical is divided into 5 questions for a total of 100 points (plus an optional bonus question worth 10 extra points). First, fork this repo and make sure your fork is made **Public** for marking. Answers should be added to the # INSERT ANSWERS HERE # section above in the **README.md** file of your forked repository.
