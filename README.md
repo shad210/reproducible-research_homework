@@ -2,7 +2,8 @@
 
 **Question 4:**
 
-a. 
+a. The two graphs which are produced from the random walks show continuous movement across the x and y axes, over time. The two graphs are noticably different in both pathway and scale.
+b.
 ## Instructions
 
 The homework for this Computer skills practical is divided into 5 questions for a total of 100 points (plus an optional bonus question worth 10 extra points). First, fork this repo and make sure your fork is made **Public** for marking. Answers should be added to the # INSERT ANSWERS HERE # section above in the **README.md** file of your forked repository.
