@@ -4,6 +4,9 @@
 library(ggplot2)
 library(gridExtra)
 
+# Setting the random seed number for reproducibility
+set.seed(1096)
+
 random_walk  <- function (n_steps) {
   
   df <- data.frame(x = rep(NA, n_steps), y = rep(NA, n_steps), time = 1:n_steps)
