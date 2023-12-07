@@ -1,5 +1,9 @@
 # Reproducible research: version control and R
 
+**Questions 1, 2, 3:**
+
+logistic growth repository link: 
+
 **Question 4:**
 
 a. The two graphs which are produced from the random walks show continuous movement across the x and y axes, over time. The two graphs are noticably different in both pathway and scale.
@@ -58,7 +62,15 @@ e. To estimate the volume of a 300 kb dsDNA virus, we must use our allometric mo
 
 Bonus:
 
+Reproducibility and replicability are related concepts in scientific research, but differ fundementally in their application. Reproducibility is concerned with the ability to repeatedly produce the same results given a defined and consistent set of data, methods, and working environment. Replicability on the other hand is concerned with the ability to produce similar results using different conditions, and perhaps even different methods or data. In practice, replicable research is that which, if another research carried out an independent study on the same topic, would produce results that are consistent with your original findings, even though the environment and methods may have differed.
 
+Git and GitHub are very useful tools for enhancing both reproducability and replicability in research. In terms of the benefits for reproducability, Git and GitHub provide a very good basis for reproducible work, as you can use version control and branching to create distinct lines of development over time, and these version and the changes made to them can be accessed at any point, so reproducing work carried out previously within the Git repository is always possible. By creating distinct temporal and developmental milestones, GitHub can create a useful basis for reproducible research, where any version of the project can be easily accessed and reproduced, as well as having different lines of potential experimental questioning available all in the centralised repository. In terms of scientific replicability, Git and GitHub are also highly useful because of the highly collaborative nature of the platform. By making your data, experiments, and code accessible, independent studies can replicate the work you carried out using the methodology that you have laid out. In addition to this, documenting your work and lines of reasoning can better help elucidate the context, scope, and protocols for your study, thus enhancing the possibility of successful scientific replication.
+
+However, there are also limitations to using Git and GitHub for reproducible and replicable scientific research. Firstly, it must be said that without a good background in programming or an understanding of the sort of theory or philosophy behind GitHub, it can be quite overwhelming and difficult to use initially, which can lead to errors in work and inefficiency. Building off of this, without a good knowledge of the way GitHub operates, there is the possibility of publishing information that shouldn't be publically accessible. Sadly, researchers must be quite cautious in regards to privacy concerns on communal platforms such as GitHub as scientific research is not always collaborative, and often multiple competing groups may be researching the same topic. Lastly, although the open-source nature of data on GitHub has a great many benefits, it still must be well understood by the observer - especially the context of the research project - if it is to be effectively utilised. On top of this, most of what is pubished on GitHub is unmoderated, and has the potential to be inaccurate or fraudulent.
+
+All in all, however, Git and GitHub are wonderful tools which can help with creating reproducible and replicable scientific research.
+
+-----------------------------------
 
 ## Instructions
 
