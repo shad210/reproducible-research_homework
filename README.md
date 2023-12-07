@@ -2,7 +2,9 @@
 
 **Questions 1, 2, 3:**
 
-logistic growth repository link: 
+Logistic growth repository link: https://github.com/shad210/logistic_growth.git
+
+---------------------------------------
 
 **Question 4:**
 
